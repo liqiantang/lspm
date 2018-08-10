@@ -1,0 +1,6 @@
+<!--pages/record/record.wxml-->
+<view class='inventoryDetail {{index%5==0?"active":""}}' wx:for="{{recordList}}">
+    <view>
+    {{item}}
+    </view>
+  </view>

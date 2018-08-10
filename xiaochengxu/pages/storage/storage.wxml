@@ -1,0 +1,46 @@
+<!--pages/storage/storage.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="section">
+  <view class="section__title padding_20">仓库</view>
+  <picker name="warehouse" bindchange="bindWarehouseChange" value="{{warehouseIndex}}" range="{{warehouseArray}}">
+    <view class="picker padding_20">
+      {{warehouseArray[warehouseIndex]}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title padding_20">品牌</view>
+  <picker name="brand" bindchange="bindBrandChange" value="{{brandIndex}}" range="{{brandArray}}">
+    <view class="picker padding_20">
+      {{brandArray[brandIndex]}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title padding_20">类别</view>
+  <picker name="category" bindchange="bindCategoryChange" value="{{categoryIndex}}" range="{{categoryArray}}">
+    <view class="picker padding_20">
+      {{categoryArray[categoryIndex]}}
+    </view>
+  </picker>
+</view>
+
+<!--
+container padding_0  左右分开
+-->
+<view class="section ">
+    <view class="section__title padding_20">型号</view>
+    <input name="model" value='{{model}}' placeholder="型号" />
+  </view>
+  <view class="section ">
+    <view class="section__title padding_20">数量</view>
+    <input name="num" value='{{num}}' placeholder="数量"/>
+  </view>
+
+  <view class="btn-area">
+    <button formType="submit" >提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>

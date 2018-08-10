@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='cells_title'>用户名</view>
+<view class='cells cells_after-title'>
+  <view class='cell cell_input'>
+    <view class='cell_bd'>
+      <input name="userName" class='input' focus placeholder='输入用户名'></input>
+    </view>
+  </view>
+</view>
+
+<view class='cells_title'>密码</view>
+<view class='cells cells_after-title'>
+  <view class='cell cell_input'>
+    <view class='cell_bd'>
+      <input name="password" class='input' password  placeholder='输入密码'></input>
+    </view>
+  </view>
+</view>
+<view class='btn-area'>
+  <button class='btn' formType="submit" type='primary'>登陆</button>
+</view>
+</form>

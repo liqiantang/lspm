@@ -1,0 +1,33 @@
+/* pages/home/home.wxss */
+.banner{
+  height: 300rpx;
+  background:  url(../../images/banner.jpg);
+  width: 100%;
+}
+
+
+.home_list{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content:center;
+  justify-content:space-around;
+  height:70vh;
+}
+ 
+.home_list .area{
+  width:190rpx;
+  text-align: center;
+  padding-top: 40rpx;
+}
+.home_list .area image{
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center
+
+}
+.home_list .area text{
+  display: inline-block;
+  width: 100%;
+  text-align: center
+}

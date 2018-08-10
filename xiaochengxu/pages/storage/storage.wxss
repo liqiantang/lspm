@@ -1,0 +1,30 @@
+/* pages/storage/storage.wxss */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section{
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+}
+.section input{
+  padding-bottom: 2rpx;
+  border: 2rpx #ccc solid;
+  margin: 20rpx
+}
+.section view{
+  margin-right: 20rpx;
+}
+.btn-area{
+  margin: 20rpx;
+}
+picker{
+  width: 80%;
+}
+button{
+  margin: 10rpx 0;
+}

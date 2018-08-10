@@ -1,0 +1,12 @@
+/* pages/record/record.wxss */
+page{
+  background: #ccc;
+}
+.inventoryDetail{
+  padding: 20rpx;
+  text-align: center;
+  background: #fff;
+}
+.inventoryDetail.active{
+  margin-top: 20rpx;
+}

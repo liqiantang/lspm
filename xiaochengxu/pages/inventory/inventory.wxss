@@ -1,0 +1,25 @@
+/* pages/inventory/inventory.wxss */
+@import "/wxSearch/wxSearch.wxss";
+
+
+.tab-h{
+    width: 100%; box-sizing: border-box;overflow: hidden;line-height: 80rpx;background: #F7F7F7; font-size: 32rpx; white-space: nowrap;}
+.inventoryItem{
+  display: inline-block;border-bottom: 2rpx solid #ccc;
+  font-size: 30rpx;
+  
+  }
+.inventoryItem text{
+  display: inline-block;
+  width: 200rpx;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.inventoryItem button{
+  display: inline-block;
+  width: 200rpx;
+  text-align: center;
+  font-size: 28rpx;
+  overflow: visible;
+}

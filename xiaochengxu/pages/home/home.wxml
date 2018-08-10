@@ -1,0 +1,51 @@
+<!--pages/home/home.wxml-->
+<view class="container padding_0" style='background:#eee;padding-bottom:30rpx;'>
+  <view class="banner" style='background:url(../../images/banner.jpg) round'>
+
+  
+  
+  </view>
+  <view class="home_list" style='background:#fff'>
+  
+    <navigator class='area' url="../storage/storage" hover-class="navigator-hover">
+      <image mode="widthFix" src='../../images/add.png'    />
+
+      <text>入库</text>
+    </navigator>
+
+    <!-- <navigator class='area'  url="../outbound/outbound" hover-class="navigator-hover">
+      <image mode="widthFix" src='../../images/cangku.png'   />
+      <text>出库</text>
+    </navigator> -->
+    
+    <navigator class='area' url="../record/record" hover-class="navigator-hover">
+      <image mode="widthFix" src='../../images/record.png'   />
+      <text>出入库记录</text>
+    </navigator>
+
+    <view class='area'>
+      <image mode="widthFix" src='../../images/loding.png'  />
+      <text>敬请期待</text>
+    </view>
+
+    <view class='area'>
+      <image mode="widthFix" src='../../images/loding.png'   />
+      <text>敬请期待</text>
+    </view>
+
+    <view class='area'>
+      <image mode="widthFix" src='../../images/loding.png'   />
+      <text>敬请期待</text>
+    </view>
+
+    <view class='area'>
+      <image mode="widthFix" src='../../images/loding.png'   />
+      <text>敬请期待</text>
+    </view>
+    
+  
+  
+  </view>
+ 
+</view>
+

@@ -1,0 +1,39 @@
+/* pages/inventory/itemDetails/itemDetails.wxss */
+page{
+  background: #ccc;
+}
+.tab-h{
+    height: 80rpx;width: 100%; box-sizing: border-box;overflow: hidden;line-height: 80rpx;background: #fff; font-size: 16px; display: flex;}
+
+.tab-item{margin:0 36rpx;display: inline-block;flex: 1;text-align: center;}
+.tab-item.active{color: #efb336;position: relative;}
+.tab-item.active:after{ content: "";display: block;height: 8rpx;width: 100%;background: #efb336;position: absolute; bottom: 0;left: 5rpx;border-radius: 16rpx;}
+
+.content{
+  background: #ccc;
+  padding: 20rpx 0;
+  height: 100vw;
+  
+}
+.goodsInfo{
+  background: #fff;
+  padding: 40rpx 40rpx;
+  display: flex;
+  border-bottom:2rpx #ccc solid; 
+}
+.inventoryInfoItem{
+  background: #fff;
+  padding: 40rpx 40rpx;
+  display: flex;
+  border-bottom:2rpx #ccc solid; 
+  text-align: center;
+}
+.inventoryDetail{
+  padding: 20rpx;
+  text-align: center;
+  background: #fff;
+}
+.inventoryDetail.active{
+  margin-top: 20rpx;
+}
+

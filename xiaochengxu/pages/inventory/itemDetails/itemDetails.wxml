@@ -1,0 +1,40 @@
+<!--pages/inventory/itemDetails/itemDetails.wxml-->
+<view class="tab-h">
+  <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">货品信息</view>
+  <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">库存信息</view>
+  <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">出入库明细</view>
+</view>
+
+<view class='content'>
+  <view class='contentInfo' wx:if="{{currentTab==0 ? true : false}}">
+    <view class='goodsInfo'>
+      <view style='flex:1;'>品牌</view><view style='flex:3;'>{{info.brand}}</view>
+    </view>
+    <view class='goodsInfo'>
+      <view style='flex:1;'>类别</view><view style='flex:3;'>{{info.category}}</view>
+    </view>
+    <view class='goodsInfo'>
+      <view style='flex:1;'>型号</view><view style='flex:3;'>{{info.model}}</view>
+    </view>
+    <view class='goodsInfo'>
+      <view style='flex:1;'>所有库存</view><view style='flex:3;'>{{info.num}}</view>
+    </view>
+  </view>
+  <view class='inventoryInfo' wx:if="{{currentTab==1 ? true : false}}">
+    <view class='inventoryInfoItem'>
+      <view style='flex:1;border-right:2rpx #ccc solid; '>仓库</view><view style='flex:1;'>仓库存库</view>
+    </view>
+    <view class='inventoryInfoItem' wx:for="{{list}}">
+      <view style='flex:1;border-right:2rpx #ccc solid;'>{{item.warehouse}}</view><view style='flex:1;'>{{item.num}}</view>
+    </view>
+  </view>
+
+  <view class='inventoryDetail {{index%5==0?"active":""}}' wx:if="{{currentTab==2 ? true : false}}" wx:for="{{recordList}}">
+    <view>
+    {{item}}
+    </view>
+  </view>
+
+
+</view>
+

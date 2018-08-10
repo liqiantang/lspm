@@ -1,0 +1,24 @@
+/**app.wxss**/
+
+view{
+  font-size: 32rpx;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+/*---------------距离--------------*/
+/*padding*/
+.padding_0{
+  padding: 0;
+}
+.padding_20{
+  padding: 20rpx;
+}

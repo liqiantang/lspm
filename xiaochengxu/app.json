@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+   
+    "pages/home/home",
+    "pages/storage/storage",
+    "pages/inventory/inventory",
+    "wxSearch/wxSearch",
+    "pages/outbound/outbound",
+    "pages/inventory/itemDetails/itemDetails",
+    "pages/record/record"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#efb336",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#efb336",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/home_press.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/cangku_press.png",
+        "iconPath": "images/cangku.png",
+        "pagePath": "pages/inventory/inventory",
+        "text": "库存"
+      },
+      {
+        "selectedIconPath": "images/my_press.png",
+        "iconPath": "images/my.png",
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

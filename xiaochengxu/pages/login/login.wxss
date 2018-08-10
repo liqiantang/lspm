@@ -1,0 +1,18 @@
+/* pages/login/login.wxss */
+.cells_title{
+  background: #eee;
+  font-size: 32rpx;
+  color: #666;
+  padding: 15rpx;
+  padding-left: 20rpx;
+}
+.cell_input{
+  border-top: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #ccc;
+}
+.cell_bd{
+  padding: 20rpx;
+}
+.btn-area{
+  margin: 20rpx;
+}

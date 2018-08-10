@@ -1,0 +1,42 @@
+<!--pages/inventory/inventory.wxml-->
+<view class="section inventoryItem">
+  <picker name="brand" bindchange="bindWarehouseChange" value="{{warehouseIndex}}" range="{{warehouseArray}}">
+    <view class="picker padding_20">
+      {{warehouseArray[warehouseIndex]}}
+    </view>
+  </picker>
+</view>
+
+<import src="/wxSearch/wxSearch.wxml"/>
+<view class="wxSearch-section">
+      <view class="wxSearch-pancel">
+          <input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="搜索品牌、类别、型号" />
+          <button class="wxSearch-button" bindtap="wxSearchFn" size="mini" plain="true">搜索</button>
+      </view>
+</view>
+<template is="wxSearch" data="{{wxSearchData}}"/>
+
+
+<scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+  <view class="inventoryItem title padding_0">
+    <text class="left">品牌</text>
+    <text class="right">类别</text>
+    <text class="left">型号</text>
+    <text class="right">数量</text>
+    <text class="left">仓库</text>
+    <text class="left">操作</text>
+  </view>
+
+  <view class='inventoryList' wx:for="{{inventoryList}}">
+    <view  class='inventoryItem title padding_0' bindtap='clickItem' data-model="{{item.model}}">
+      <text>{{item.brand}}</text>
+      <text>{{item.category}}</text>
+      <text>{{item.model}}</text>
+      <text>{{item.num}}</text>
+      <text>{{item.warehouse}}</text>
+      <button catchtap="clickOut" data-info="{{item}}" disabled="{{item.num==0?true:false}}">出库</button>
+    </view>
+  </view>
+</scroll-view>
+
+
